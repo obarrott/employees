@@ -15,13 +15,13 @@ const handleClick = async (e) => {
   e.preventDefault();
     var i = 0;
 
-    while (i<1) {
+    while (i<2) {
       await randomUserGenerator()
       await i++;}
 };
 
 const randomUserGenerator = async () => {
-  await fetch('https://randomuser.me/api/?results=100')
+  await fetch('https://randomuser.me/api/?results=3500')
     .then((response) => {
         return response.json()
     }).then((data) => {
