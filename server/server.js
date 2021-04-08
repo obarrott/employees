@@ -45,7 +45,7 @@ app.get('/api/v1/employees/:id', async (req, res) => {
 //Insert an Employee
 app.post('/api/v1/employees', async (req, res) => {
 
-    console.log(req.body);
+    //console.log(req.body);
 
     try {
         const results = await db.query(
